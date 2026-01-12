@@ -3,12 +3,54 @@
   margin: 0;
   padding: 0;
 }
-
-a {
-  color: inherit;
-}
-
 img,
 video {
   display: block;
 }
+
+button{
+display: flex;
+padding: 10px 20px;
+align-items: center;
+gap: 10px;
+border-radius: 25px;
+border: 2px solid #F00;
+background-color: white;
+margin: 20px;
+}
+.like-text{
+  padding: 0px;
+  color: #F00;
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+font-weight: 600;
+}
+i{
+  color: #F00;
+  font-size: 18px;
+font-style: normal;
+font-weight: 400;
+}
+a {
+  color: inherit;
+}
+button.active {
+  background-color: #F00;
+}
+
+button.active .like-text,
+button.active .like-count,
+button.active i {
+  color: white;
+}
+
+button:hover {
+  background-color: #F00;
+}
+
+button:hover .like-text,
+button:hover .like-count,
+button:hover i {
+  color: white;
+}
+
